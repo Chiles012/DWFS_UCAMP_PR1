@@ -1,12 +1,30 @@
 # DWFS_UCAMP_PR1
 
-# HTML
+Primer modulo de DWSF
 
-## ¿Que es HTML?
+* [HTML](#HTML)
+
+  * [¿Que es HTML?](#¿Que es HTML?)
+  * [Historia](#Historia)
+  * [Etiquetas HTML](#Etiqueras HTML)
+  * [Etiquetas Semanticas](#Etiquetas Semanticas)
+  * [Etiquetas de texto](#Etiquetas de texto)
+  * [Etiquetas de contenido](#Etiquetas de contenido)
+* [CSS](#CSS)
+
+  * [Selectores](#Selectores)
+  * [Variables](#Variables)
+  * [Flexbox](#Flexbox)
+  * [Grid](#Grid)
+  * [Responsive](#Responsive)
+
+# HTML {HTML}
+
+## ¿Que es HTML? {¿Que es HTML?}
 
 HTML, siglas de HyperText Markup Language (Lenguaje de Marcado de Hipertexto), es el lenguaje estándar utilizado para crear y estructurar el contenido de las páginas web. Es el bloque de construcción fundamental de cualquier sitio web y proporciona la estructura y el significado semántico del contenido.
 
-## Historia HTML
+## Historia HTML {#Historia}
 
 1. Años 1980:
    * A medida que Internet comenzaba a tomar forma, surgieron diferentes formatos de documentos electrónicos. No había un estándar común en ese momento.
@@ -29,7 +47,7 @@ HTML, siglas de HyperText Markup Language (Lenguaje de Marcado de Hipertexto), e
    * HTML5 es la versión más reciente y actualizada de HTML.
    * Lanzada en octubre de 2014, HTML5 introdujo muchas mejoras y nuevas características, incluyendo elementos semánticos (como `article`, `section`, `header`, `footer`), etiquetas de video y audio, almacenamiento local, lienzo (canvas) para gráficos, soporte para aplicaciones web y mucho más.
 
-## Etiquetas HTML
+## Etiquetas HTML {Etiquetas HTML}
 
 Las etiquetas HTML son elementos utilizados para estructurar y dar formato al contenido de una página web.
 
@@ -74,7 +92,7 @@ Existen etiquetas indispensables al crear un archivo HTML a continuación se mos
 </html>
 ```
 
-## Etiquetas Semanticas
+## Etiquetas Semanticas {Etiquetas Semanticas}
 
 Al utilizar estas etiquetas, le proporcionas un significado claro al contenido y facilitas la comprensión tanto para los desarrolladores como para los motores de búsqueda. Recuerda que el uso adecuado de las etiquetas semánticas mejora la accesibilidad y la experiencia de usuario, además de ser beneficioso para el SEO (Optimización para Motores de Búsqueda).
 
@@ -301,3 +319,110 @@ Selectores de ID:
 * Los selectores de ID se utilizan para seleccionar elementos HTML que tienen un atributo de ID específico.
 * Ejemplo: `#logo` selecciona el elemento con el ID "logo".
 * Se usa el atributo id=""
+
+Selectores descendentes:
+
+* Los selectores descendentes se utilizan para seleccionar elementos que son descendientes de otros elementos.
+* Ejemplo: `div p` selecciona todos los elementos de párrafo que son descendientes de elementos `<div>`.
+
+Selectores de atributo:
+
+* Los selectores de atributo se utilizan para seleccionar elementos HTML basados en los valores de sus atributos.
+* Ejemplo: `a[href="https://www.ejemplo.com"]` selecciona todos los enlaces con el atributo `href` igual a "[https://www.ejemplo.com](https://www.ejemplo.com/)".
+
+Selectores de pseudo-clase:
+
+* Los selectores de pseudo-clase se utilizan para seleccionar elementos en estados o condiciones específicas.
+* Ejemplo: `a:hover` selecciona todos los enlaces cuando el cursor está sobre ellos.
+
+
+## Variables
+
+En CSS, las variables se conocen como "variables personalizadas" o "variables CSS". Se definen utilizando la sintaxis `--nombre-variable` y se asigna un valor después de dos puntos `:`. Por ejemplo:
+
+```
+/* Creación de una variable CSS */
+:root {
+  --color-primario: #007bff;
+  --tamanio-fuente: 16px;
+}
+
+```
+
+* En el ejemplo anterior, hemos creado dos variables CSS: `--color-primario` y `--tamanio-fuente`.
+* El selector `:root` se utiliza para establecer las variables en el nivel más alto del documento, lo que hace que estén disponibles para todo el documento.
+
+Las variables CSS se pueden utilizar en cualquier lugar donde se apliquen valores CSS. Por ejemplo, puedes utilizarlas en las propiedades `color`, `font-size`, `background-color`, entre otras.
+
+```
+/* Uso de variables CSS */
+body {
+  font-size: var(--tamanio-fuente);
+}
+
+a {
+  color: var(--color-primario);
+}
+
+.header {
+  background-color: var(--color-primario);
+}
+
+```
+
+## Flexbox
+
+Flexbox es un sistema de diseño unidimensional que permite organizar elementos en un contenedor de manera flexible, ya sea en una fila (eje principal horizontal) o en una columna (eje principal vertical). Esto hace que el diseño sea más adaptable y fácil de manejar en diferentes tamaños de pantalla.
+
+#### Propiedades clave de Flexbox:
+
+1. `display: flex;`: Esta propiedad se aplica al contenedor y establece el contenedor como un contenedor flex, para usar flexbox es indispensable usar esta propiedad.
+2. `flex-direction: row | row-reverse | column | column-reverse;`: Define la dirección principal en la que los elementos flexibles se muestran dentro del contenedor. Los valores pueden ser "row" (fila), "column" (columna), "row-reverse" (fila en sentido inverso) o "column-reverse" (columna en sentido inverso).
+3. `justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;`: Controla la alineación de los elementos a lo largo del eje principal (horizontal si `flex-direction` es "row" y vertical si es "column").
+4. `align-items: flex-start | flex-end | center | baseline | stretch;`: Controla la alineación de los elementos a lo largo del eje secundario (vertical si `flex-direction` es "row" y horizontal si es "column").
+5. `flex-wrap: nowrap | wrap | wrap-reverse;`: Controla si los elementos flexibles se deben envolver en líneas adicionales o no, cuando el espacio del contenedor es insuficiente. Los valores son "nowrap" (no se envuelve), "wrap" (se envuelve) y "wrap-reverse" (se envuelve en sentido inverso).
+
+## Grid
+
+Grid es un sistema de diseño bidimensional que permite organizar elementos en filas y columnas dentro de un contenedor. Es especialmente útil para crear diseños complejos y alinear elementos en diferentes áreas de la página.
+
+#### Propiedades clave de Grid:
+
+1. `display: grid;`: Esta propiedad se aplica al contenedor y lo convierte en un contenedor de cuadrícula, esta propiedad es indispensable para usar grid.
+2. `grid-template-columns` y `grid-template-rows`: Define las columnas y filas de la cuadrícula. Puedes establecer tamaños fijos (`px`, `%`) o utilizar valores flexibles (`fr`, `auto`, etc.).
+3. `grid-column` y `grid-row`: Estas propiedades permiten controlar el posicionamiento y el espacio que ocupa un elemento en la cuadrícula.
+4. `grid-gap`: Establece el espacio entre filas y columnas en la cuadrícula.
+5. `grid-template-areas`: Permite asignar nombres a áreas específicas de la cuadrícula y organizar los elementos utilizando esos nombres.
+
+## ¿Qué es Responsive Web Design?
+
+El Diseño Web Responsivo es un enfoque de diseño y desarrollo web que busca crear sitios web que se adapten y respondan de manera fluida a diferentes tamaños de pantalla y dispositivos, como computadoras de escritorio, tablets y smartphones. El objetivo es proporcionar una experiencia óptima para los usuarios, independientemente del dispositivo que estén utilizando, evitando la necesidad de crear versiones separadas para cada tipo de dispositivo.
+
+### Cómo lograr Responsive Web Design con CSS:
+
+1. **Unidades flexibles y fluidas** : Utiliza unidades relativas como porcentajes (`%`), em (`em`) o viewport width (`vw`) para definir anchos, alturas y márgenes. Esto permitirá que los elementos se ajusten proporcionalmente al tamaño de la pantalla.
+2. **Media Queries** : Las Media Queries son una característica clave de CSS que permite aplicar estilos específicos a diferentes rangos de tamaño de pantalla. Se definen utilizando la regla `@media` y se pueden aplicar diferentes estilos según la resolución, el ancho o el tipo de dispositivo.
+
+```
+/* Ejemplo de Media Query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  /* Estilos aplicados a pantallas de 768px o menos */
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Ejemplo de Media Query para pantallas grandes */
+@media screen and (min-width: 1200px) {
+  /* Estilos aplicados a pantallas de 1200px o más */
+  body {
+    font-size: 18px;
+  }
+}
+
+```
+
+1. **Imágenes y multimedia adaptables** : Utiliza imágenes con atributos `max-width: 100%; height: auto;` para que se ajusten al ancho del contenedor y no se desborden en pantallas pequeñas.
+2. **Layout flexible con Flexbox y Grid** : Utiliza Flexbox y Grid para crear diseños flexibles y adaptables que se ajusten automáticamente a diferentes tamaños de pantalla.
+3. **Menús y navegación adaptable** : Crea menús y barras de navegación que se contraigan en un menú desplegable para pantallas más pequeñas, utilizando técnicas como "hamburguesa" o "toggle".
+4. **Testing en diferentes dispositivos** : Siempre prueba el sitio en diferentes dispositivos reales o utilizando herramientas de desarrollo web que permitan simular diferentes tamaños de pantalla.
