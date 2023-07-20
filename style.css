@@ -108,6 +108,13 @@ section {
     margin: 1rem 0;
 }
 
+@media screen and (max-width: 768px) {
+    .grid-2,
+    .grid-4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 .card {
     background-color: var(--card-color);
     padding: 1rem;
@@ -193,6 +200,22 @@ header nav ul {
     margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+    .jumbotron {
+        flex-direction: column;
+    }
+
+    .jumbotron img {
+        width: 80%;
+        margin: 25px;
+    }
+
+    .jumbotron-content {
+        width: 80%;
+        margin: 50px;
+    }
+}
+
 /* About */
 .about {
     display: flex;
@@ -217,6 +240,21 @@ header nav ul {
     margin: 10px 0;
 }
 
+.about-img {
+    width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about-content {
+        width: 80%;
+        margin: 50px;
+    }
+}
+
 /* Our Plans */
 .our-plans {
     display: flex;
@@ -233,6 +271,12 @@ header nav ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .our-plans-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /* Newsletter */
@@ -336,4 +380,11 @@ footer p {
     margin: 1rem 0;
     grid-column-start: 3;
     grid-column-end: 5;
+}
+
+@media screen and (max-width: 768px) {
+    footer p {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
 }
