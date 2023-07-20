@@ -8,7 +8,7 @@
         Landing Page | Gym
     </title>
     <!-- Agregar hoja de estilos ( la etiqueta linl se agrega para agregar stylos solo se debe poner stylesheet en el atributo rel y href la ruta ) -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./style.css">
     <!-- Agrgar icono de la imagen ( href se puede agregar una url o ruta en el proyecto ) -->
     <link rel="icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F6e%2F94%2F69%2F6e94695575a2c897135f7cc0b86800eb.png&f=1&nofb=1&ipt=f362a612c22725956f59b72b590d3b27eb67fe0f8a9d2488db863956d32e2ea2&ipo=images">
     <!-- Agregar cdn de normalize ( la definicion de un cdn es "Content Delivery Network" o  Red de Entrega de contenido ) -->
@@ -17,8 +17,358 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
-
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <h4>R-GENESIS</h4>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.whatsapp.com/">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron">
+            <div class="jumbotron-content">
+                <h1>
+                    ¡Entrena con nosotros!
+                </h1>
+                <h2>Nuesto popular programa</h2>
+                <br>
+                <button class="btn-primary">Contactanos</button>
+            </div>
+            <img src="./assets/pesas-gym.png" alt="pesas">
+        </div>
+    </header>
+    <main>
+        <section class="yellow about">
+            <img src="./assets/pesas-gym.png" alt="pesas">
+            <div class="about-content">
+                <h2>¿Quienes somos?</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sit reprehenderit quidem, delectus at deserunt repellendus beatae quis, non eaque fugit adipisci sed omnis aliquid quae necessitatibus officia dolores! Omnis.
+                </p>
+                <div class="grid-2">
+                    <ul>
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="container our-plans">
+            <h2>Nuestros planes</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat veniam amet quibusdam, ad aspernatur iste nobis porro optio ab. Consectetur incidunt dolor omnis commodi nostrum alias voluptatum ad. Corrupti, modi.
+            </p>
+            <br>
+            <div class="our-plans-content">
+                <div class="card">
+                    <img src="./assets/pesas-gym.png" alt="pesas" class="card-img">
+                    <div class="card-content">
+                        <h3>
+                            Plan 1
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        </p>
+                        <br>
+                        <button class="btn-primary">Contactanos</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/pesas-gym.png" alt="pesas" class="card-img">
+                    <div class="card-content">
+                        <h3>
+                            Plan 2
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        </p>
+                        <br>
+                        <button class="btn-primary">Contactanos</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/pesas-gym.png" alt="pesas" class="card-img">
+                    <div class="card-content">
+                        <h3>
+                            Plan 3
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        </p>
+                        <br>
+                        <button class="btn-primary">Contactanos</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter">
+            <h2>
+                ¡Suscribete a nuestro newsletter!
+            </h2>
+            <h3>
+                Obten <span>descuentos</span> y <span>promociones</span> exclusivas
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            </p>
+            <form action="">
+                <input type="email" placeholder="Correo electronico">
+                <input class="btn-primary" type="submit" value="Suscribirse">
+            </form>
+        </section>
+        <section class="container our-trainers">
+            <h2>
+                Nuestros entrenadores
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veniam amet quibusdam, ad aspernatur iste nobis porro optio ab. Consectetur incidunt dolor omnis commodi nostrum alias voluptatum ad. Corrupti, modi.
+            </p>
+            <div class="grid-4">
+                <div class="card">
+                    <img src="./assets/pesas-gym.png" alt="pesas" class="card-img">
+                    <div class="card-content">
+                        <h3>
+                            Entrenador 1
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        </p>
+                        <ul class="social-networks">
+                            <li>
+                                <a href="https://www.facebook.com/">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/pesas-gym.png" alt="pesas" class="card-img">
+                    <div class="card-content">
+                        <h3>
+                            Entrenador 2
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        </p>
+                        <ul class="social-networks">
+                            <li>
+                                <a href="https://www.facebook.com/">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/pesas-gym.png" alt="pesas" class="card-img">
+                    <div class="card-content">
+                        <h3>
+                            Entrenador 3
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        </p>
+                        <ul class="social-networks">
+                            <li>
+                                <a href="https://www.facebook.com/">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/pesas-gym.png" alt="pesas" class="card-img">
+                    <div class="card-content">
+                        <h3>
+                            Entrenador 4
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        </p>
+                        <ul class="social-networks">
+                            <li>
+                                <a href="https://www.facebook.com/">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="comments grid-2">
+            <div class="comments-content">
+                <div class="comment">
+                    <img src="./assets/pesas-gym.png" alt="pesas" class="comment-img">
+                    <div class="comment-content">
+                        <h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        </h2>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis quasi fugit voluptatibus obcaecati quis eligendi exercitationem optio ea, reprehenderit ipsum accusantium blanditiis ducimus repudiandae praesentium architecto. Maxime deleniti ipsam suscipit.
+                        </p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <img src="./assets/pesas-gym.png" alt="pesas" class="comment-img">
+                    <div class="comment-content">
+                        <h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        </h2>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis quasi fugit voluptatibus obcaecati quis eligendi exercitationem optio ea, reprehenderit ipsum accusantium blanditiis ducimus repudiandae praesentium architecto. Maxime deleniti ipsam suscipit.
+                        </p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <img src="./assets/pesas-gym.png" alt="pesas" class="comment-img">
+                    <div class="comment-content">
+                        <h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                        </h2>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis quasi fugit voluptatibus obcaecati quis eligendi exercitationem optio ea, reprehenderit ipsum accusantium blanditiis ducimus repudiandae praesentium architecto. Maxime deleniti ipsam suscipit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="comments-img">
+            </div> 
+        </section>
+    </main>
+    <footer class="grid-4"> 
+        <div class="logo">
+            <h4>R-GENESIS</h4>
+        </div>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.whatsapp.com/">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </li>
+        </ul>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dignissimos, enim aperiam asperiores reprehenderit mollitia accusantium alias quibusdam, quos esse illum aliquid corrupti obcaecati reiciendis iusto commodi possimus debitis beatae?
+        </p>
+    </footer>
 </body>
 </html>

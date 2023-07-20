@@ -1,0 +1,339 @@
+/* Variables */
+:root {
+    --primary-color: #ffcc02;
+    --primary-color-light: #ffdd4b;
+    --secondary-color: #0d1217;
+    --card-color: #f3f4f6;
+
+    --title-font: 'Dosis', sans-serif;
+    --text-font: 'Rubik', sans-serif;
+}
+
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--secondary-color);
+    font-family: var(--text-font);
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--title-font);
+    font-weight: bold;
+}
+
+/* Global */
+a {
+    text-decoration: none;
+}
+
+i {
+    font-size: 1rem;
+    color: var(--card-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1rem;
+    background-color: var(--card-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color-light);
+}
+
+.yellow {
+    background-color: var(--primary-color);
+}
+
+section {
+    padding: 2rem 0;
+    width: 100vw;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.card {
+    background-color: var(--card-color);
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card .social-networks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.card .social-networks i {
+    font-size: 1.5rem;
+    color: #0d1217;
+}
+
+.card-content {
+    padding: 1rem;
+    color: #0d1217;
+    text-align: left;
+}
+
+/* Header */
+header {
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    gap: 1rem; 
+}
+
+/* Jumbotron */
+.jumbotron {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jumbotron img {
+    width: 40%;
+    margin: 25px;
+}
+
+.jumbotron-content {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+}
+
+.jumbotron h1, .jumbotron h2 {
+    color: var(--card-color);
+    text-align: left;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* About */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+    text-align: center;
+}
+
+.about-content ul {
+    text-align: left;
+}
+
+.about-content ul li {
+    margin: 10px 0;
+}
+
+/* Our Plans */
+.our-plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--card-color);
+    text-align: left;
+    padding: 1rem;
+}
+
+.our-plans-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/* Newsletter */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    gap: 1rem;
+    background-image: url("https://www.laregion.es/media/laregion/images/2016/01/01/2016010118263398746.jpg");
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 1rem 0;
+    padding: 1rem;
+    color: var(--card-color);
+    font-weight: bold;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+}
+
+.newsletter span {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Our Trainers */
+.our-trainers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--card-color);
+    text-align: left;
+    padding: 1rem;
+}
+
+/* Comments */
+.comments-content {
+    background-color: var(--card-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: right;
+}
+
+.comments-content .comment {
+    display: flex;
+    justify-content: end;
+    align-items: right;
+    padding: 1rem;
+    text-align: right;
+}
+
+.comments-content .comment .comment-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.comments-content .comment .comment-content {
+    width: 80%;
+    padding: 1rem;
+}
+
+.comments-img {
+    background-image: url("https://www.laregion.es/media/laregion/images/2016/01/01/2016010118263398746.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 0!important;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer p {
+    margin: 1rem 0;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
