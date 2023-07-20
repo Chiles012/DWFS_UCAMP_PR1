@@ -26,6 +26,12 @@ Primer modulo de DWSF
 	* https://css-tricks.com/
 	* https://codepen.io/
 	* https://www.frontendmentor.io/
+ 	* https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+  	* https://youtu.be/hVdTQWASliE
+* ¿Qué sigue?
+	* Javascript
+ 	* Git
+  	* Github    	
 
 # HTML {HTML}
 
