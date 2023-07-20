@@ -4,19 +4,28 @@ Primer modulo de DWSF
 
 * [HTML](#HTML)
 
-  * [¿Que es HTML?](#¿Que es HTML?)
-  * [Historia](#Historia)
-  * [Etiquetas HTML](#Etiqueras HTML)
-  * [Etiquetas Semanticas](#Etiquetas Semanticas)
-  * [Etiquetas de texto](#Etiquetas de texto)
-  * [Etiquetas de contenido](#Etiquetas de contenido)
-* [CSS](#CSS)
+  * [¿Que es HTML?]
+  * [Historia]
+  * [Etiquetas HTML]
+  * [Etiquetas Semanticas]
+  * [Etiquetas de texto]
+  * [Etiquetas de contenido]
+* [CSS]
 
-  * [Selectores](#Selectores)
-  * [Variables](#Variables)
-  * [Flexbox](#Flexbox)
-  * [Grid](#Grid)
-  * [Responsive](#Responsive)
+  * [Selectores]
+  * [Variables]
+  * [Flexbox]
+  * [Grid]
+  * [Responsive]
+* Documentación y links recomendados
+	* https://www.w3schools.com/Css/
+	* https://www.w3schools.com/html/default.asp
+	* https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Getting_started
+	* https://www.freecodecamp.org/
+	* https://www.codecademy.com/
+	* https://css-tricks.com/
+	* https://codepen.io/
+	* https://www.frontendmentor.io/
 
 # HTML {HTML}
 
